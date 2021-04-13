@@ -7,7 +7,8 @@ package cn.sharea.singleton;
  */
 public class SingletonLazyLoadingLock02 {
 
-    private static SingletonLazyLoadingLock02 INSTANCE;
+    // volatile 保证可见性，不能保证原子性
+    private static volatile SingletonLazyLoadingLock02 INSTANCE;
 
     private SingletonLazyLoadingLock02(){}
 
