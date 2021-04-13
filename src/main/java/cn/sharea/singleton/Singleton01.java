@@ -14,6 +14,7 @@ public class Singleton01 {
 
     private static final Singleton01 INSTANCE = new Singleton01();
 
+    // 构造函数是private
     private Singleton01(){}
 
     public static Singleton01 getInstance(){
